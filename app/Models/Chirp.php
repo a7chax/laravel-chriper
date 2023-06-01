@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Chirp extends Model
 {
     use HasFactory;
+
+    protected $attributes =[
+        'arung' => "arung"
+    ];
+
+    protected $fillable = [
+        'message',
+        'arung'
+    ];
 }
